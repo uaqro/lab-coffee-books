@@ -35,18 +35,17 @@
         Add new place
       </a>
     </div>
-  {{/if}}
-  {{#if logged}}
     <div class="navbar-end">
-      <div class="navbar-item">
-        <div class="buttons">
-          <a class="button is-primary" href = '/logout'>
-            <strong>Logout</strong>
-          </a>
-        </div>
+  <div class="navbar-item">
+    <div class="buttons">
+        <a class="button is-primary" href = '/facebook/logout'>
+          <strong>Logout</strong>
+        </a>
+      </div>
       </div>
     </div>
-  {{else}}
+  </div>
+    {{else}}
     <div class="navbar-end">
       <div class="navbar-item">
         <div class="buttons">
@@ -60,7 +59,7 @@
       </div>
     </div>
   {{/if}}
-  </div>
+  
 </nav>
 
   {{{body}}}

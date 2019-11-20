@@ -13,8 +13,8 @@ exports.placeGet = (_, res) =>{
 }
 
 exports.placePost = async (req, res, next) =>{
+  console.log(req.body)
   const place = await Place.create({...req.body});
-  console.log('new place added');
   res.redirect("/");
 }
 

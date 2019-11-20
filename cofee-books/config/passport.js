@@ -19,7 +19,7 @@ passport.use(
         const newUser = await User.create({
           facebookId: profile.id,
           name: profile.displayName,
-          email: profile.emails[0].value
+          email: profile.email
         });
         return cb(null, newUser);
       } else {
